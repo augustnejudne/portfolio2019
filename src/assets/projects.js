@@ -52,7 +52,7 @@ export default [
   },
   {
     title: "Recipe Finder",
-    desc: "An app for finding any kinds of recipes from around the world.",
+    desc: "An app for finding all kinds of recipes from around the world.",
     tech: ["React", "Redux"],
     live: "https://recipe-find.netlify.com/",
     feRepo: "https://github.com/augustnejudne/recipe-finder",
