@@ -44,7 +44,7 @@ export default [
   },
   {
     title: "Dumaguete Tourism Site",
-    desc: "Tourism site for the City of Dumaguete.",
+    desc: "Tourism site for the City of Dumaguete, Philippines.",
     tech: ["React", "Bootstrap"],
     live: "https://visit-dumaguete.netlify.com/",
     feRepo: "https://github.com/augustnejudne/dumaguete-tourism",
