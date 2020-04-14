@@ -14,7 +14,7 @@ export default [
     tech: [
       "Full-stack",
       "NextJS",
-      "React Hook",
+      "React Hooks",
       "Context API",
       "CSS Modules",
       "Node",
