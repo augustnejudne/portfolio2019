@@ -1,0 +1,32 @@
+.container {
+  h3 {
+    display: inline-block;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-family: "Bangers", sans-serif;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-bottom: 5px dashed #231411;
+  }
+
+  .sectionsContainer {
+    margin: 0 auto;
+
+    .section {
+      margin-bottom: 2rem;
+
+      h4 {
+        font-size: 2.4rem;
+        font-family: "Bangers", sans-serif;
+        font-weight: 300;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

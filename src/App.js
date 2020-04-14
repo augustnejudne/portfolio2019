@@ -1,24 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Title from "./components/title";
+import MyStack from "./components/my-stack";
+import Projects from "./components/projects";
+import AboutMe from './components/about-me';
+import headTop from "./assets/head-top.svg";
+import headBot from "./assets/head-bottom.svg";
+import classes from './app.module.scss';
 
 function App() {
+  const [rotation, set_rotation] = useState(0);
+  const [y2, set_y2] = useState(0);
+
+  const handleScroll = e => {
+    const y = e.currentTarget.scrollY;
+    if (y > 500) return set_rotation(500 / 4);
+    set_rotation(y / 4);
+    set_y2(y / 4);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+  const headTopStyle = {
+    transform: `translateX(-53.6%) rotate(${rotation}deg)`
+  };
+
+  const headContainerStyle = {
+    transform: `translate(-50%, ${y2}px)`
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.app}>
+      <Title h1="Kim Nejudne" h2="Full-Stack Javascript Developer" />
+      <div className={classes.spacer}/>
+      <AboutMe />
+      <MyStack />
+      <Projects />
+      <div className={classes.headContainer} style={headContainerStyle}>
+        <img src={headTop} alt="" className={classes.headTop} style={headTopStyle} />
+        <img src={headBot} alt="" className={classes.headBot} />
+      </div>
     </div>
   );
 }

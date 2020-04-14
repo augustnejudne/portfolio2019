@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  max-width: 100%;
+  margin-bottom: 6rem;
+  position: relative;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #ccc;
+
+  .section {
+    margin: 0 auto;
+    width: 60%;
+    @media (max-width: 600px) {
+      width: 95%;
+    }
+    
+    h2 {
+      font-size: 2.8rem;
+    }
+
+    .links {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        font-size: 1.8rem;
+        margin: 0 1rem 1rem;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 3rem;
+      box-shadow: 0 2rem 3rem rgba(0,0,0,.2);
+    }
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 100%;
+      li {
+        font-size: 1.6rem;
+        margin: 5px 1rem;
+        color: #fff;
+        background: #607d8b;
+        padding: 0.8rem 1.2rem;
+        border-radius: 5rem;
+      }
+    }
+  }
+}
