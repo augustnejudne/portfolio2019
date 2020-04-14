@@ -1,10 +1,10 @@
-import QuizMaker from "./quiz-maker.png";
-import BobsBurger from "./bobs-burger.png";
-import WFHomes from "./wf-homes.png";
-import Dumaguete from "./dumaguete.png";
-import RecipeFinder from "./recipe-finder.png";
-import CloudyBurger from "./cloudy-burger.png";
-import ShirtMate from "./shirtmate.png";
+import QuizMaker from "./quiz-maker.webp";
+import BobsBurger from "./bobs-burger.webp";
+import WFHomes from "./wf-homes.webp";
+import Dumaguete from "./dumaguete.webp";
+import RecipeFinder from "./recipe-finder.webp";
+import CloudyBurger from "./cloudy-burger.webp";
+import ShirtMate from "./shirtmate.webp";
 
 export default [
   {
