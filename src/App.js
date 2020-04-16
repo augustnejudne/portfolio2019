@@ -9,13 +9,13 @@ import classes from './app.module.scss';
 
 function App() {
   const [rotation, set_rotation] = useState(0);
-  const [y2, set_y2] = useState(0);
+  const [ypos, set_ypos] = useState(0);
 
   const handleScroll = e => {
-    const y = e.currentTarget.scrollY;
-    if (y > 500) return set_rotation(500 / 4);
-    set_rotation(y / 4);
-    set_y2(y / 4);
+    const scrollY = e.currentTarget.scrollY;
+    if (scrollY > 500) return set_rotation(500 / 4);
+    set_rotation(scrollY / 4);
+    set_ypos(scrollY / 4);
   };
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function App() {
   };
 
   const headContainerStyle = {
-    transform: `translate(-50%, ${y2}px)`
+    transform: `translate(-50%, ${ypos}px)`
   };
 
   return (
